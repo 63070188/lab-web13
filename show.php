@@ -23,7 +23,7 @@ $res = mysqli_query($conn, 'SELECT * FROM guestbook');
       <thead class="thead-dark">
         <tr>
           <th 10%> <div align="center">Name</div></th>
-          <th width=50%> <div align="center">Comment </div></th>
+          <th width=80%> <div align="center">Comment </div></th>
           <th width=40%> <div align="center">Actions </div></th>
         </tr>
 </div>
