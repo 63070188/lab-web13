@@ -30,11 +30,11 @@ $res = mysqli_query($conn, 'SELECT * FROM guestbook');
 while($Result = mysqli_fetch_array($res))
 {
 ?>
-  <tr bgcolor="#BEBEBE" textcolor="white">
+  <tr bgcolor="#BEBEBE"><font color="white>
     <td><?php echo $Result['Name'];?></div></td>
     <td><?php echo $Result['Comment'];?></td>
     <td><?php echo $Result['Link'];?></td>
-  </tr>
+    </font></tr>
 <?php
 }
 ?>
