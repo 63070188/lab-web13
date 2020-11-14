@@ -37,7 +37,6 @@ while($Result = mysqli_fetch_array($res))
     <td>
       echo "<td><a href='UserDelete.php?name=$row[0]'">Edite</a></td> ";
       echo "<td><a href='UserDelete.php?name=$row[0]' onclick=\"return confirm('Do you want to delete this record? !!!')\">Delete</a></td> ";
-      echo "</tr>";
     </td>
   </tr>
 <?php
