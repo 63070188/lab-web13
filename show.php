@@ -1,6 +1,7 @@
 <html>
 <head>
 <title>ITF Lab</title>
+  <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -33,17 +34,15 @@ while($Result = mysqli_fetch_array($res))
   <tr bgcolor="#BEBEBE">
     <td><?php echo $Result['Name'];?></div></td>
     <td><?php echo $Result['Comment'];?></td>
-    <td><?php echo $Result['Link'];?></td>
+    <td><a href="form.html"></td>
   </tr>
 <?php
 }
 ?>
 </table>
+  <center><a href="insert.html"></center>
 <?php
 mysqli_close($conn);
 ?>
-<div class="container">
-  <button style = “background-color:#FF6666 align="center"><a href="form.html"><b>เพิ่ม</b></a></button>
-</div>
 </body>
 </html>
