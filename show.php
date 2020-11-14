@@ -43,7 +43,7 @@ while($Result = mysqli_fetch_array($res))
 }
 ?>
 </table>
-  <center><input type="button" value="Insert" onclick="form.html"></center>
+  <center><input type="button" value="Insert" onclick=form.html></center>
 <?php
 mysqli_close($conn);
 ?>
