@@ -43,7 +43,7 @@ while($Result = mysqli_fetch_array($res))
 mysqli_close($conn);
 ?>
 <div class="container">
-  <button style = “background-color:#FF6666><center><a href="form.html"><b>เพิ่ม</b></a></center></button>
+  <button style = “background-color:#FF6666 align="center"><a href="form.html"><b>เพิ่ม</b></a></button>
 </div>
 </body>
 </html>
