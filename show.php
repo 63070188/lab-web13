@@ -34,9 +34,9 @@ while($Result = mysqli_fetch_array($res))
   <tr bgcolor="#BEBEBE">
     <td><?php echo $Result['Name'];?></div></td>
     <td><?php echo $Result['Comment'];?></td>
-    <td>
+    <td><center>
       <input type="button" value="Edite" onclick=form.html>
-      <input type="button" value="Delete" onclick=form.html>
+      <input type="button" value="Delete" onclick=form.html></center></td>
   </tr>
 <?php
 }
