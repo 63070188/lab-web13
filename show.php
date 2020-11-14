@@ -36,7 +36,7 @@ while($Result = mysqli_fetch_array($res))
     <td><?php echo $Result['Comment'];?></td>
     <td>
       <a href="form.html?id=<?php echo $fetch['Name']; ?>">Edite</a>
-      <input type="reset" value="Delete" onclick=form.html>
+      <input type="reset" value="Delete">
     </td>
   </tr>
 <?php
