@@ -43,7 +43,7 @@ while($Result = mysqli_fetch_array($res))
 }
 ?>
 </table>
-  <center><a href="form.html"></center>
+  <center><input type="form" id="form.html"></center>
 <?php
 mysqli_close($conn);
 ?>
