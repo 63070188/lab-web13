@@ -42,5 +42,6 @@ while($Result = mysqli_fetch_array($res))
 <?php
 mysqli_close($conn);
 ?>
+<button><b>ปุ่มแบบข้อความ</b></button>
 </body>
 </html>
