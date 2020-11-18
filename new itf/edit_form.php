@@ -10,7 +10,7 @@
 <body>
 <?php
 $dbconfig = include('dbconfig.php');
-$conn = mysqli_connect($dbconfig['host'], $dbconfig['username'], $dbconfig['password'], $dbconfig['database']);
+$conn = mysqli_connect($dbconfig['lab-itf17.mysql.database.azure.com'], $dbconfig['Aphatsara@lab-itf17'], $dbconfig['Po0926245419'], $dbconfig['ITFLab'], 3306);
 if (!$conn)
 {
     die('Failed to connect to MySQL: '.mysqli_connect_error());
