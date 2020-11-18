@@ -10,20 +10,18 @@
 <body>
 <?php
 $dbconfig = include('dbconfig.php');
-$conn = mysqli_connect($dbconfig['lab-itf17.mysql.database.azure.com'], $dbconfig['Aphatsara@lab-itf17'], $dbconfig['Po0926245419'], $dbconfig['ITFLab']), 3306;
+$conn = mysqli_connect($dbconfig['lab-itf17.mysql.database.azure.com'], $dbconfig['Aphatsara@lab-itf17'], $dbconfig['Po0926245419'], $dbconfig['ITFLab], 3306);
 if (!$conn)
 {
     die('Failed to connect to MySQL: '.mysqli_connect_error());
 }
 
-$name = $_POST['name'];
-$comment = $_POST['comment'];
-$link = $_POST['link'];
-$sql = "INSERT INTO guestbook (Name , Comment , Link) VALUES ('$name', '$comment', '$link')";
+$ID = $_POST['ID'];
+$sql = "DELETE FROM guestbook WHERE ID='$ID'";
 
 if (mysqli_query($conn, $sql)) {
     echo '<div class="container">
-            <h3>Comment has been saved in to the database successfully.</h3>
+            <h3>Comment has been deleted successfully.</h3>
             <a role="button" class="btn btn-primary mt-3" href="guestbook.php">Home</a>
          </div>';
 } else {
