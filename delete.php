@@ -10,7 +10,7 @@
 <body>
 <?php
 $dbconfig = include('dbconfig.php');
-$conn = mysqli_connect($dbconfig['host'], $dbconfig['username'], $dbconfig['password'], $dbconfig['host']);
+$conn = mysqli_connect($dbconfig['host'], $dbconfig['username'], $dbconfig['password'], $dbconfig['ITFLab']);
 if (!$conn)
 {
     die('Failed to connect to MySQL: '.mysqli_connect_error());
