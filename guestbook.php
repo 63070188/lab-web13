@@ -45,7 +45,7 @@ while($row = mysqli_fetch_array($res))
                         </form>
                         <form action="delete.php" method="post" class="d-inline">
                             <input type="hidden" name="ID" value=<?php echo $row['ID'];?>>
-                            <button type="submit" class="btn btn-sm btn-danger mb-1">Delete</button>
+                            <button background-color: #555555 type="submit" class="btn btn-sm btn-danger mb-1">Delete</button>
                         </form>
                     </div>
                 </td>
