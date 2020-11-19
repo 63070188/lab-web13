@@ -9,7 +9,7 @@
 </head>
 <body>
     <div class="container">
-        <h1>Insert new comment</h1>
+        <h1>Insert...</h1>
         <form action="insert.php" method="post" class="mt-4">
             <div class="form-group">
                 <label for="inputName">Name</label>
