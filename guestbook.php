@@ -18,7 +18,7 @@ if (!$conn)
 $res = mysqli_query($conn, 'SELECT * FROM guestbook');
 ?>
 <div class="container">
-    <h1>Guestbook</h1>
+    <h1>List</h1>
     <table class="table table-responsive-md">
         <thead>
             <tr>
@@ -41,11 +41,11 @@ while($row = mysqli_fetch_array($res))
                     <div class="d-inline">
                         <form action="edit_form.php" method="post" class="d-inline">
                             <input type="hidden" name="ID" value=<?php echo $row['ID'];?>>
-                            <button type="submit" class="btn btn-sm btn-primary mb-1">Edit</button>
+                            <button type="submit" class="btn btn-sm btn-green mb-1">Edit</button>
                         </form>
                         <form action="delete.php" method="post" class="d-inline">
                             <input type="hidden" name="ID" value=<?php echo $row['ID'];?>>
-                            <button background-color: #555555 type="submit" class="btn btn-sm btn-danger mb-1">Delete</button>
+                            <button type="submit" class="btn btn-sm btn-danger mb-1">Delete</button>
                         </form>
                     </div>
                 </td>
