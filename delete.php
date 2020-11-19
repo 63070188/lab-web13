@@ -21,7 +21,7 @@ $sql = "DELETE FROM guestbook WHERE ID='$ID'";
 
 if (mysqli_query($conn, $sql)) {
     echo '<div class="container">
-            <h3>Comment has been deleted successfully.</h3>
+            <h3>Deleted successfully.</h3>
             <a role="button" class="btn btn-primary mt-3" href="guestbook.php">Home</a>
          </div>';
 } else {
